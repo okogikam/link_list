@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link-List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://okogikam.github.io/card/card.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="login.html" class="nav-link">Login</a>
+      <a href="daftar.html" class="nav-link">Daftar</a>
+    </nav>
+    <main id="main" class="d-grid">
+      <h1 class="title">Page Setting</h1>
+      <section class="d-block">
+        <form action="#" method="post" class="form">
+          <label for="foto">foto profile</label>
+          <div class="form-group profil">
+            <div class="icon">
+              <img
+                src="https://ultimagz.com/wp-content/uploads/Anime-Demon-Slayer-Kimetsu-no-Yaiba.png"
+                alt=""
+                id="icon"
+              />
+            </div>
+            <div>
+              <p>foto: <input type="text" name="foto" /></p>
+              <p>nama:<input type="text" name="name" /></p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="sosial">media sosial</label>
+            <div>
+              <p>icon: <input name="icon-sosial" list="icon-sosial" /></p>
+              <datalist id="icon-sosial">
+                <option value="facebook">facebook</option>
+                <option value="whatshap">whatshap</option>
+                <option value="telegram">telegram</option>
+                <option value="google">google</option>
+              </datalist>
+            </div>
+            <p>link: <input type="text" name="link-sosial" /></p>
+            <button class="btn-link" name="addsosial">tambah</button>
+          </div>
+          <div class="form-group">
+            <label for="link">Link list</label>
+            <p>image: <input name="icon-link" type="text" /></p>
+            <p>link: <input type="text" name="link" /></p>
+            <button class="btn-link" name="addlink">tambah</button>
+          </div>
+          <div class="form-group text-center">
+            <button class="btn-link">simpan</button>
+          </div>
+        </form>
+      </section>
+      <div class="preview">
+        <button class="btn-link btn-preview">preview</button>
+      </div>
+      <aside>
+        <div class="contoh">
+          <div class="header">
+            <div class="icon">
+              <img
+                src="https://ultimagz.com/wp-content/uploads/Anime-Demon-Slayer-Kimetsu-no-Yaiba.png"
+                alt=""
+                id="icon"
+              />
+            </div>
+            <h3>Okogikam</h3>
+          </div>
+          <div class="sosial">
+            <a href="#"
+              ><ion-icon name="mail-outline" class="bg-red"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon name="logo-facebook" class="bg-blue"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon name="logo-instagram" class="bg-ungu"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon name="logo-whatsapp" class="bg-green"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon name="logo-pinterest" class="bg-red"></ion-icon
+            ></a>
+          </div>
+          <div class="link-list list">
+            <a href="#">Habaranime</a>
+          </div>
+          <div class="footer">
+            <p>hancau kreative</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer id="footer">
+      <p>hancau kreative</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let aside = document.querySelector("aside");
+      let btnPreview = document.querySelector(".btn-preview");
+      btnPreview.addEventListener("click", () => {
+        aside.classList.toggle("d-flex");
+      });
+      aside.addEventListener("click", () => {
+        aside.classList.remove("d-flex");
+      });
+    </script>
+  </body>
+</html>
