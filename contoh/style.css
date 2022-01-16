@@ -1,0 +1,19 @@
+#main {
+  max-width: 900px;
+  display: flex;
+  flex-flow: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  background-color: var(--clr-main);
+  padding: 5px;
+}
+.footer p {
+  color: var(--white);
+}

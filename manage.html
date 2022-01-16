@@ -25,48 +25,159 @@
       <a href="daftar.html" class="nav-link">Daftar</a>
     </nav>
     <main id="main" class="d-grid">
-      <h1 class="title">Page Setting</h1>
-      <section class="d-block">
-        <form action="#" method="post" class="form">
-          <label for="foto">foto profile</label>
-          <div class="form-group profil">
-            <div class="icon">
-              <img
-                src="https://ultimagz.com/wp-content/uploads/Anime-Demon-Slayer-Kimetsu-no-Yaiba.png"
-                alt=""
-                id="icon"
-              />
+      <div class="title">
+        <h1>Page Setting</h1>
+        <span><a href="./contoh/index.html" target="_blank">view halaman</a></span>
+      </div>
+      <div class="">
+        <div class="menu-setting">
+          <ul class="nav nav-tabs" role="tablist" id="mytabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#general">Geberal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tema">tema</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#halaman">halaman</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#setting">setting</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="general"
+            role="tabpanel"
+            aria-labelledby="general"
+          >
+            <section>
+              <form action="#" method="post" class="form">
+                <label for="foto">foto profile</label>
+                <div class="form-group profil">
+                  <div class="icon">
+                    <img
+                      src="https://ultimagz.com/wp-content/uploads/Anime-Demon-Slayer-Kimetsu-no-Yaiba.png"
+                      alt=""
+                      id="icon"
+                    />
+                  </div>
+                  <div>
+                    <p>foto url: <input type="text" name="foto" /></p>
+                    <p>nama:<input type="text" name="name" /></p>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="sosial">media sosial</label>
+                  <div>
+                    <p>icon: <input name="icon-sosial" list="icon-sosial" /></p>
+                    <datalist id="icon-sosial">
+                      <option value="facebook">facebook</option>
+                      <option value="whatshap">whatshap</option>
+                      <option value="telegram">telegram</option>
+                      <option value="google">google</option>
+                    </datalist>
+                  </div>
+                  <p>link: <input type="text" name="link-sosial" /></p>
+                  <button class="btn-link" name="addsosial">tambah</button>
+                </div>
+                <div class="form-group">
+                  <label for="link">Link list</label>
+                  <p>image url: <input name="icon-link" type="text" /></p>
+                  <p>link: <input type="text" name="link" /></p>
+                  <button class="btn-link" name="addlink">tambah</button>
+                </div>
+                <div class="form-group text-center">
+                  <button class="btn-link">simpan</button>
+                </div>
+              </form>
+            </section>
+          </div>
+          <div
+            class="tab-pane fade show"
+            id="tema"
+            role="tabpanel"
+            aria-labelledby="tema"
+          >
+            <section class="">
+              <!-- <h2>tema setting</h2> -->
+              <form action="#" method="post" class="form">
+                <div class="form-group">
+                  <label for="jenis-link">tampilan link</label>
+                  <p>
+                    List
+                    <input type="radio" name="jenis-link" id="" value="list" />
+                  </p>
+                  <p>
+                    Grid
+                    <input type="radio" name="jenis-link" id="" value="grid" />
+                  </p>
+                </div>
+                <div class="form-group">
+                  <label for="wallpaper">wallpaper</label>
+                  <p>url: <input type="text" name="wallpaper" /></p>
+                </div>
+                <div class="form-group">
+                  <label for="musik">embed musik</label>
+                  <p>url: <input type="text" name="musik" /></p>
+                </div>
+                <div class="form-group text-center">
+                  <button class="btn-link btn-tema">Simpan</button>
+                </div>
+              </form>
+            </section>
+          </div>
+          <div
+            class="tab-pane fade show "
+            id="halaman"
+            role="tabpanel"
+            aria-labelledby="halaman"
+          >
+            <form action="#" method="post" class="form">
+              <div class="form-group">
+                <label for="jenis-link">halaman</label>
+                <p>
+                  icon url
+                  <input type="text" name="icon-url" />
+                </p>
+                <p>
+                  title
+                  <input type="text" name="title" />
+                </p>
+              </div>
+              <div class="form-group text-center">
+                <button class="btn-link btn-tema">Simpan</button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="tab-pane fade show "
+            id="setting"
+            role="tabpanel"
+            aria-labelledby="setting"
+          >
+          <form action="#" method="post" class="form">
+            <div class="form-group">
+              <label for="">Reset Password</label>
+              <p>
+                password lama
+                <input type="text" name="pass-lama" />
+              </p>
+              <p>
+                password baru
+                <input type="text" name="pass-baru" />
+              </p>
             </div>
-            <div>
-              <p>foto: <input type="text" name="foto" /></p>
-              <p>nama:<input type="text" name="name" /></p>
+            <div class="form-group text-center">
+              <button class="btn-link btn-tema">Simpan</button>
             </div>
+          </form>
+        </section>
           </div>
-          <div class="form-group">
-            <label for="sosial">media sosial</label>
-            <div>
-              <p>icon: <input name="icon-sosial" list="icon-sosial" /></p>
-              <datalist id="icon-sosial">
-                <option value="facebook">facebook</option>
-                <option value="whatshap">whatshap</option>
-                <option value="telegram">telegram</option>
-                <option value="google">google</option>
-              </datalist>
-            </div>
-            <p>link: <input type="text" name="link-sosial" /></p>
-            <button class="btn-link" name="addsosial">tambah</button>
-          </div>
-          <div class="form-group">
-            <label for="link">Link list</label>
-            <p>image: <input name="icon-link" type="text" /></p>
-            <p>link: <input type="text" name="link" /></p>
-            <button class="btn-link" name="addlink">tambah</button>
-          </div>
-          <div class="form-group text-center">
-            <button class="btn-link">simpan</button>
-          </div>
-        </form>
-      </section>
+        </div>
+      </div>
       <div class="preview">
         <button class="btn-link btn-preview">preview</button>
       </div>
@@ -112,8 +223,18 @@
       <p>hancau kreative</p>
     </footer>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
     <script
@@ -132,6 +253,10 @@
       });
       aside.addEventListener("click", () => {
         aside.classList.remove("d-flex");
+      });
+      $("#mytabs a").on("click", function (e) {
+        e.preventDefault();
+        $(this).tab("show");
       });
     </script>
   </body>

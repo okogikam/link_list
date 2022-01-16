@@ -48,11 +48,11 @@ a {
   padding-top: 70px;
   position: relative;
 }
-#main section {
+/* #main section {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 #main .title {
   border-bottom: 3px solid var(--clr-secont);
   color: var(--clr-main-lg);
@@ -123,8 +123,8 @@ label {
   );
 }
 .form {
-  max-width: min-content;
-  margin: auto;
+  /* max-width: min-content; */
+  /* margin: auto; */
 }
 #footer {
   position: fixed;
@@ -218,13 +218,15 @@ label {
 }
 .d-flex {
   display: flex;
-  /* flex-flow: column; */
   justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 600px) {
   .profil {
     grid-template-columns: 1fr;
+  }
+  .d-grid {
+    grid-template-rows: 75px auto;
   }
   .d-grid .title {
     grid-column: unset;
