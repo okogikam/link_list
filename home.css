@@ -225,7 +225,7 @@ label {
   .profil {
     grid-template-columns: 1fr;
   }
-  .d-grid {
+  .manage.d-grid {
     grid-template-rows: 75px auto;
   }
   .d-grid .title {
